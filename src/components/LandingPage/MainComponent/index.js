@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../../Common/Button";
 import "./styles.css";
-import gradient from "../../../assets/gradient.png";
 import iphone from "../../../assets/iphone.png";
 import { motion } from "framer-motion";
 import { RWebShare } from "react-web-share";
@@ -48,7 +47,7 @@ function MainComponent() {
           <RWebShare
             data={{
               text: "CryptoDashboard made by Param Patel using React JS.",
-              url: "https://crypto-dashboard-jan.netlify.app",
+              url: "https://crypto-hub-tawny.vercel.app/",
               title: "CryptoHub",
             }}
             onClick={() => toast.info("App Shared!")}
@@ -58,7 +57,6 @@ function MainComponent() {
         </motion.div>
       </div>
       <div className="gradient-div">
-        <img src={gradient} className="gradient" />
         <motion.img
           src={iphone}
           className="iphone"
